@@ -15,22 +15,22 @@ const Testimonial = () => {
     {
       img: profilePic1,
       review:
-        "Working with this developer has been a game-changer for our business. Their ability to craft seamless web applications is unmatched, and they were always ready to go the extra mile. Our website’s performance has improved tenfold.",
+        "Working with this developer has been a game-changer for our business. His ability to craft seamless web applications is unmatched, and he was always ready to go the extra mile. Our website’s performance has improved tenfold.",
     },
     {
       img: profilePic2,
       review:
-        "A true expert in mobile app development! The app they built for us was intuitive, user-friendly, and fast. They provided regular updates and always ensured we were part of the decision-making process. Highly recommend!",
+        "A true expert in mobile app development! The app he built for us was intuitive, user-friendly, and fast. He provided regular updates and always ensured we were part of the decision-making process. Highly recommend!",
     },
     {
       img: profilePic3,
       review:
-        "Their understanding of blockchain technology is impressive. We entrusted them with our blockchain project, and they delivered a secure, scalable solution that exceeded our expectations. We look forward to future collaborations.",
+        "His understanding of blockchain technology is impressive. We entrusted them with our blockchain project, and they delivered a secure, scalable solution that exceeded our expectations. We look forward to future collaborations.",
     },
     {
       img: profilePic4,
       review:
-        "Their versatility in software and web development is incredible. Not only did they help us build a robust software system, but their ongoing support has been invaluable. The project was delivered on time and within budget.",
+        "His versatility in software and web development is incredible. Not only did he help us build a robust software system, but his ongoing support has been invaluable. The project was delivered on time and within budget.",
     },
   ];
 
@@ -44,9 +44,13 @@ const Testimonial = () => {
         <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
       </div>
 
+      
+      <div className="swiper-button-prev"></div>
+      <div className="swiper-button-next"></div>
+
       <Swiper
         slidesPerView={1}
-        navigation={true} 
+        navigation={{ prevEl: '.swiper-button-prev', nextEl: '.swiper-button-next' }} 
         pagination={{ clickable: true }}
         modules={[Navigation, Pagination]} 
       >
