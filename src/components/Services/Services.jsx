@@ -26,11 +26,21 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+        <span>
+          I offer a wide range of services:
           <br />
-          ispum is simpley dummy text of printing
-        </spane>
+          - Design
+          <br />
+          - Development
+          <br />
+          - UI/UX Design
+          <br />
+          With expertise in various tools and technologies, I help bring your ideas to life.
+          <br />
+          Whether you're looking for a new design, a custom website, or an engaging user experience,
+          <br />
+          I have the skills to make it happen.
+        </span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>
@@ -47,7 +57,10 @@ const Services = () => {
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            detail={
+              "Expert in Figma, Sketch, Photoshop, Adobe Illustrator, and Adobe XD."
+              + " I craft visually appealing and user-friendly designs."
+            }
           />
         </motion.div>
         {/* second card */}
@@ -58,8 +71,11 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={"Development"}
+            detail={
+              "Proficient in HTML, CSS, JavaScript, React, Node.js, and Express."
+              + " I build responsive, dynamic, and high-performance websites."
+            }
           />
         </motion.div>
         {/* 3rd */}
@@ -72,7 +88,8 @@ const Services = () => {
             emoji={Humble}
             heading={"UI/UX"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "I create seamless and intuitive user interfaces."
+              + " My approach ensures a smooth journey from start to finish."
             }
             color="rgba(252, 166, 31, 0.45)"
           />
