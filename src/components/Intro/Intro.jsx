@@ -53,7 +53,7 @@ const Intro = () => {
 
           {/* Role animation */}
           <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-            <span style={{ color: "black", fontSize: "24px" }}>I am an experienced </span>
+            <span style={{ color: darkMode ? "white" : "black", fontSize: "24px" }}>I am an experienced </span>
             <motion.span
               key={currentRole}
               initial={{ y: 40, opacity: 0 }}
